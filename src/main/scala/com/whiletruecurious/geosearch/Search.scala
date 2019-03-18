@@ -1,6 +1,6 @@
-package geosearch
+package com.whiletruecurious.geosearch
 
-import geosearch.models.Coordinate
+import com.whiletruecurious.geosearch.models.Coordinate
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.broadcast.Broadcast
@@ -10,7 +10,7 @@ import org.apache.spark.sql.types.DoubleType
 
 object Search {
   def main(args: Array[String]): Unit = {
-    val sparkConf = new SparkConf().setMaster("local[*]").setAppName("geosearch-batch-job")
+    val sparkConf = new SparkConf().setMaster("local[*]").setAppName("com.whiletruecurious.geosearch-batch-job")
     val sc = new SparkContext(sparkConf)
     val sqlContext = new SQLContext(sc)
 

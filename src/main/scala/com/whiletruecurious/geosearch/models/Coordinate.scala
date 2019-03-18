@@ -1,4 +1,4 @@
-package geosearch.models
+package com.whiletruecurious.geosearch.models
 
 /**
   * Created by Mukul Dev on 21/07/18.

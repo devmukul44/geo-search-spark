@@ -8,7 +8,7 @@ This Spark application is written in Scala to map given latitude longitude value
 
 This takes two sets of data as input. A **master** set of unique id, latitude and longitude values (which are considered constant), and a **search** set of latitude longitudes which are to be searched and mapped to this master set. This is expected to change on every run of the ETL/ join code. **This application is using broadcasting of a sorted index to reduce the need for a cross product using a map side join.**
 
-Main class can be found: *src/main/scala/geosearch/Search.scala*  
+Main class can be found: *src/main/scala/com.whiletruecurious.geosearch/Search.scala*  
 
 Input data files can be found: *src/main/resources/*  
 
